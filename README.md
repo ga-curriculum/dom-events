@@ -10,9 +10,10 @@ tktk What is the takeaway of this module?
 
 | Lesson | Video Time | Video | Learning Objective |
 | ------ |:----------:|:-----:| ------------------ |
-| [tktk Microlesson Name](./tktk-microlesson-01/README.md) | tktk min | [tktk Link]() | tktk LO |
-| [tktk Microlesson Name](./tktk-microlesson-02/README.md) | tktk min | [tktk Link]() | tktk LO |
-| [tktk Microlesson Name](./tktk-microlesson-03/README.md) | tktk min | [tktk Link]() | tktk LO |
+| [Setup](./setup/README.md) | tktk min | [tktk Link]() | tktk LO |
+| [Concepts](./concepts/README.md) | tktk min | [tktk Link]() | tktk LO |
+| [Fundamentals](./fudnamentals/README.md) | tktk min | [tktk Link]() | tktk LO |
+| [Responding to Events](./responding-to-events/README.md) | tktk min | [tktk Link]() | tktk LO |
 |  **Total Module**                                        | tktk min | --            | ---     |
 
 ## Additional content 
@@ -21,9 +22,10 @@ tktk What is the takeaway of this module?
 
 ### 🚀 Level Up
 
-- [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-01.md)
-- [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-02.md)
-- [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-03.md)
+- [Event bubbling](./level-up/event-bubbling.md)
+- [Event delegation](./level-up/event-delegation.md)
+- [Other methods to add event listeners ](./level-up/other-methods.md)
+- [Removing event listeners](./level-up/removing-event-listeners.md)
 
 ## Internal resources
 
