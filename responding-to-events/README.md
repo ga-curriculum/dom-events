@@ -1,4 +1,4 @@
-# DOM Events - tktk Microlesson Name
+# DOM Events - Responding to Events
 
 ![Hero image](./assets/hero.png)
 

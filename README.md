@@ -4,7 +4,7 @@
 
 ## Module overview
 
-tktk What is the takeaway of this module?
+This module introduces DOM events in JavaScript.
 
 ## Content outline
 
