@@ -1,4 +1,4 @@
-# [tktk Module Name]
+# DOM Events
 
 ![Hero image](./assets/tktkhero-main.png)
 

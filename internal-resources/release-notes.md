@@ -1,4 +1,4 @@
-# [tktk Module Name] - Release Notes
+# DOM Events - Release Notes
 
 ![Hero image](../assets/tktkhero-secondary.png)
 
