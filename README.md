@@ -24,8 +24,8 @@ tktk What is the takeaway of this module?
 
 - [Event bubbling](./level-up/event-bubbling.md)
 - [Event delegation](./level-up/event-delegation.md)
-- [Other methods to add event listeners ](./level-up/other-methods.md)
 - [Removing event listeners](./level-up/removing-event-listeners.md)
+- [Other methods to add event listeners ](./level-up/other-methods.md)
 
 ## Internal resources
 
