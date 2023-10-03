@@ -20,7 +20,7 @@ Let’s see some bubbling in action. Add the following to your `index.html`:
 </form>
 ```
 
-Next, in `js/app.js`: 
+Next, in `js/app.js`, attach a 'click' listener to each element: 
 
 ```javascript
 const formElement = document.querySelector('form')
@@ -39,3 +39,6 @@ pElement.addEventListener('click', () => {
   console.log('p')
 })
 ```
+
+In your browser, click on each element and examine the console! 
+
