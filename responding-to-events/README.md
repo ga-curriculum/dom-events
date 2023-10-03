@@ -24,6 +24,8 @@ When we click the Add Comment button, we want to create a new comment with the t
 If we want to add a new comment, we’re going to need to create a new <li> element. Here’s how we can do it using the `document.createElement` method:
 
 ```javascript
+const btnElement = document.querySelector('button')
+
 btnElement.addEventListener('click', function(event) {
   const liElement = document.createElement('li')
   console.log(liElement)
@@ -41,10 +43,13 @@ As an exercise, find the property that holds the content of an `<input>`. Hint: 
 So, now we can set the `textContent` of the new `<li>`:
 
 ```javascript
+const btnElement = document.querySelector('button')
+// add the following: 
 const inputElement = document.querySelector('input')
 
 btnElement.addEventListener('click', function(event) {
   const liElement = document.createElement('li')
+  // add the following: 
   liElement.textContent = inputElement.value
 })
 ```
@@ -56,12 +61,16 @@ Now the new <li> is ready to be added to the DOM!
 There are several ways to add DOM elements to the document using JavaScript. A common way to add new elements to another element is by using the `appendChild` method like this:
 
 ```javascript
+const btnElement = document.querySelector('button')
+const inputElement = document.querySelector('input')
+// add the following: 
 const ulElement = document.querySelector('ul')  
 
 btnElement.addEventListener('click', function(event) {
   const liElement = document.createElement('li')
   liElement.textContent = inputElement.value
-  ulElement.appendChild(li)
+  // add the following: 
+  ulElement.appendChild(liElement)
 })
 ```
 
@@ -72,5 +81,10 @@ Note that the new element is appended as the last child. Test it out - nice!
 The new comment has been added, but if we want to improve the UX, we have one more task - clear out the `<input>`. 
 
 ```javascript
-document.querySelector('input')  
+btnElement.addEventListener('click', function(event) {
+  const liElement = document.createElement('li')
+  liElement.textContent = inputElement.value
+  ulElement.appendChild(liElement)
+  inputElement.value = ''
+})
 ```
