@@ -7,6 +7,8 @@
 
 ## Event listeners
 
+An event listener is a function; specifically, a callback function called when an event fires. Event listeners may also be referred to as event handlers.
+
 ## The 'click' event
 
 ## App 'event' object
