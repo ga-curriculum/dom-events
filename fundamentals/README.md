@@ -12,15 +12,12 @@ An event listener is a function; specifically, a callback function called when a
 Here is the common syntax for registering an event listener for a given event:
 
 ```javascript
-element.addEventListener(<event-name>, <callback>, <use-capture>)
+element.addEventListener(<event-name>, <callback>)
 ```
-- **`event-name`** is the name of the event (string)
+- **`event-name`** is the name of the event (string).
 - **`callback`** is the function we want to be executed when the event happens. When called by the JS engine, it will be passed an *event object* as an argument.
-- **`use-capture`** is a boolean and is optional. It has to do with *event phases*. We won’t need to worry about it in SEI but read the [**Event Phases section of this article](https://www.smashingmagazine.com/2013/11/an-introduction-to-dom-events/)** to learn more.
 
-> Repeatable Pattern: In this unit, we will always use the addEventListener method to attach event listeners to elements.
-
-There are two additional approaches for registering event listeners which we will discuss briefly: 
+There are two additional approaches for registering event listeners which we will discuss briefly. The following examples demonstrate a 'click' event, which we will dive into deeper in the next section: 
 
 1. In the HTML (inline):
 
@@ -28,7 +25,7 @@ There are two additional approaches for registering event listeners which we wil
 <button onclick="submit()">Add Comment</button>
 ```
 
-Using the HTML approach (onclick="reset()") is typically frowned upon because it requires that the function be in the global scope. In addition, this, like inline styling, somewhat breaks the separation of concerns design principle.
+Using the HTML approach (`onclick="reset()"`) is typically frowned upon because it requires that the function be in the global scope. In addition, this, like inline styling, somewhat breaks the separation of concerns design principle.
 
 2. Assigning to DOM elements' properties: 
 
@@ -36,11 +33,25 @@ Using the HTML approach (onclick="reset()") is typically frowned upon because it
 btnElement.onclick = submit
 ```
 
+The DOM element approach (`element.onclick`) is slightly better than the HTML approach because it does not require a globally scoped function.
+
+However, the `addEventListener` approach is the best practice because it has the flexibility of adding multiple listener functions! 
+
+> ♻️ Repeatable Pattern: In this unit, we will always use the addEventListener method to attach event listeners to elements.
+
 ## The 'click' event
 
+An element receives a [click event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) when a mouse's primary mouse button is pressed and released. Other pointing device buttons can also trigger a click event, but we'll primarily be working with mouse clicks.
 
+To listen for a 'click' event, you pass the string 'click' as the addEventListener's `event-name`: 
 
-## App 'event' object
+```javascript
+addEventListener('click', (event) => {
+  console.log(event)
+});
+```
+
+## The 'event' object
 
 Examining the **event object** provided as an argument to our event listener reveals lots of useful information about the event!
 

@@ -1,5 +1,9 @@
-# DOM Events - Level Up - tktk Microlesson Name
+# DOM Events - Level Up - Event Bubbling
 
 ![Hero image](./assets/hero.png)
 
-tktk optional student-facing level up content should be added here. Not all modules will have Level Up content - if it doesn't, the `level-up` directory should be deleted, and the Level Up section in the main `README.md` file should be removed.
+When an event occurs on an element, that event, whether it is listened to on that element or not, bubbles up through the DOM until it reaches the `document` object.
+
+
+All event listeners registered for the same event, such as `click`, will be invoked along the path to the `document` element - unless one of those listeners calls the event object’s `stopPropagation` method. 
+

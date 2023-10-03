@@ -1,5 +1,15 @@
-# DOM Events - Level Up - tktk Microlesson Name
+# DOM Events - Level Up - Removing Event Listeners
 
 ![Hero image](./assets/hero.png)
 
-tktk optional student-facing level up content should be added here. Not all modules will have Level Up content - if it doesn't, the `level-up` directory should be deleted, and the Level Up section in the main `README.md` file should be removed.
+It’s possible to remove an added event listener; however, only if a named function was used as the callback:
+
+```javascript
+btnElement.removeEventListener('click', handleClick)
+```
+
+This would remove the ‘click’ event listener (`handleClick`) that was registered on the `btnElement` element like this:
+
+```javascript
+btnElement.addEventListener('click', handleClick)
+```
