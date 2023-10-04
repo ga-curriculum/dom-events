@@ -40,5 +40,32 @@ pElement.addEventListener('click', () => {
 })
 ```
 
+To make the elements more visable, add the following CSS to `css/style.css`: 
+
+```css
+form {
+  background-color: cornflowerblue;
+  padding: 15px;
+}
+
+div {
+  background-color: darkcyan;
+  width: 75%;
+  padding: 10px;
+}
+
+p {
+  background-color: darkkhaki;
+  width: 50%;
+  padding: 10px;
+}
+```
+
+Then link to the style.css file from your HTML by adding this line to your HTML head:
+
+```html
+  <link rel="stylesheet" href="./css/style.css">
+```
+
 In your browser, click on each element and examine the console! 
 
