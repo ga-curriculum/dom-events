@@ -12,6 +12,8 @@ DOM events are actions that produce a signal that something has happened on the 
 
 As a result, DOM events are the bedrock of web page interactivity. 
 
+## Why do we use DOM events? 
+
 As programmers, we can write code which reacts to events that happen in the DOM - this allows us to implement __event-driven programming__ (programming in which the majority of the code reacts to events triggered during run-time).
 
 Lots of events are generated within the browser, for example, when:
@@ -24,8 +26,4 @@ Lots of events are generated within the browser, for example, when:
 
 Take a look [**here**](https://developer.mozilla.org/en-US/docs/Web/Events) at the type and the sheer number of events.
 
-
-
-## Why do we use DOM events? 
-
-
+Without DOM events, code we write cannot interact with 

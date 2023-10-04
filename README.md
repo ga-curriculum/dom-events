@@ -12,7 +12,7 @@ This module introduces DOM events in JavaScript.
 | ------ |:----------:|:-----:| ------------------ |
 | [Setup](./setup/README.md) | tktk min | [tktk Link]() | tktk LO |
 | [Concepts](./concepts/README.md) | tktk min | [tktk Link]() | tktk LO |
-| [Fundamentals](./fudnamentals/README.md) | tktk min | [tktk Link]() | tktk LO |
+| [Fundamentals](./fundamentals/README.md) | tktk min | [tktk Link]() | tktk LO |
 | [Responding to Events](./responding-to-events/README.md) | tktk min | [tktk Link]() | tktk LO |
 |  **Total Module**                                        | tktk min | --            | ---     |
 
