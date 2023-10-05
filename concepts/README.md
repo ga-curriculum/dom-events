@@ -26,4 +26,4 @@ Lots of events are generated within the browser, for example, when:
 
 Take a look [**here**](https://developer.mozilla.org/en-US/docs/Web/Events) at the type and the sheer number of events.
 
-Without DOM events, code we write cannot interact with events in the browser. Being able to understand and use DOM events opens up the world of interactive 
+Without DOM events, code we write cannot interact with events in the browser. 
