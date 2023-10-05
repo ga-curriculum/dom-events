@@ -21,7 +21,7 @@ When we click the **Add Comment** `button`, we want to create a new comment with
 
 ## Creating an in-memory element
 
-If we want to add a new comment, we’re going to need to create a new <li> element. Here’s how we can do it using the [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method:
+If we want to add a new comment, we’re going to need to create a new `<li>` element. Here’s how we can do it using the [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method:
 
 ```javascript
 const btnElement = document.querySelector('button')
