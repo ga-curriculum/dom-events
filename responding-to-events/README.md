@@ -54,7 +54,7 @@ btnElement.addEventListener('click', function(event) {
 })
 ```
 
-Now the new <li> is ready to be added to the DOM!
+Now the new `<li>` is ready to be added to the DOM!
 
 ## Placing the in-memory element into the DOM
 
