@@ -2,7 +2,7 @@
 
 ![Hero image](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to clearly define the concept and significance of DOM events.
 
 ## What are DOM events?
 

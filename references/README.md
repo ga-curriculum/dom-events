@@ -10,3 +10,4 @@ Links from lessons:
 
 - [Event Handlers](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers)
 
+- [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)

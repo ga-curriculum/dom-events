@@ -40,7 +40,7 @@ pElement.addEventListener('click', () => {
 })
 ```
 
-To make the elements more visable, add the following CSS to `css/style.css`: 
+To make the elements more visible, add the following CSS to `css/style.css`: 
 
 ```css
 form {
@@ -67,5 +67,5 @@ Then link to the style.css file from your HTML by adding this line to your HTML 
   <link rel="stylesheet" href="./css/style.css">
 ```
 
-In your browser, click on each element and examine the console! 
+In your browser, click on each element and examine the console to see event bubbling in action! 
 

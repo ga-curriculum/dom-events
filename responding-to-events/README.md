@@ -2,7 +2,7 @@
 
 ![Hero image](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to create in-memory elements and add them to the DOM. 
 
 ## App overview
 
@@ -17,11 +17,11 @@ Add the following code to the boilerplate:
   <button>Add Comment</button>
 ```
 
-When we click the Add Comment button, we want to create a new comment with the text entered in the input and then clear the input. We can add a `click` event listener to pretty much any element - not just buttons. However, buttons are pre-styled to look and act clickable, so you should use them when possible.
+When we click the **Add Comment** `button`, we want to create a new comment with the text entered in the input. We can add a `click` event listener to pretty much any element - not just buttons. However, buttons are pre-styled to look and act clickable, so you should use them when possible.
 
 ## Creating an in-memory element
 
-If we want to add a new comment, we’re going to need to create a new <li> element. Here’s how we can do it using the `document.createElement` method:
+If we want to add a new comment, we’re going to need to create a new <li> element. Here’s how we can do it using the [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method:
 
 ```javascript
 const btnElement = document.querySelector('button')
