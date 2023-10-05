@@ -81,10 +81,17 @@ Note that the new element is appended as the last child. Test it out - nice!
 The new comment has been added, but if we want to improve the UX, we have one more task - clear out the `<input>`. 
 
 ```javascript
+const btnElement = document.querySelector('button')
+const inputElement = document.querySelector('input')
+const ulElement = document.querySelector('ul')  
+
 btnElement.addEventListener('click', function(event) {
   const liElement = document.createElement('li')
   liElement.textContent = inputElement.value
   ulElement.appendChild(liElement)
+  // add the following: 
   inputElement.value = ''
 })
 ```
+
+We already have `ulElement` cached, so we can simply reassign the `value` property on it to an empty string. This effectively clears the input by resetting it to `''`. 
