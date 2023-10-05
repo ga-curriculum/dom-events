@@ -6,8 +6,7 @@
 
 Links from lessons:
 
-- [tktk descriptive name of link]()
+- [Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-- [tktk descriptive name of link]()
+- [Event Handlers](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers)
 
-- [tktk descriptive name of link]()
