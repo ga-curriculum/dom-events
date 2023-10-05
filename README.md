@@ -1,19 +1,20 @@
-# [tktk Module Name]
+# DOM Events
 
 ![Hero image](./assets/tktkhero-main.png)
 
 ## Module overview
 
-tktk What is the takeaway of this module?
+This module introduces DOM events in JavaScript.
 
 ## Content outline
 
 | Lesson | Video Time | Video | Learning Objective |
 | ------ |:----------:|:-----:| ------------------ |
-| [tktk Microlesson Name](./tktk-microlesson-01/README.md) | tktk min | [tktk Link]() | tktk LO |
-| [tktk Microlesson Name](./tktk-microlesson-02/README.md) | tktk min | [tktk Link]() | tktk LO |
-| [tktk Microlesson Name](./tktk-microlesson-03/README.md) | tktk min | [tktk Link]() | tktk LO |
-|  **Total Module**                                        | tktk min | --            | ---     |
+| [Setup](./setup/README.md) | --- | [tktk Link]() | --- |
+| [Concepts](./concepts/README.md) | --- | [tktk Link]() | Clearly define the concept and significance of DOM events. |
+| [Fundamentals](./fundamentals/README.md) | --- | [tktk Link]() | Compose event listeners with appropriate syntax. |
+| [Responding to Events](./responding-to-events/README.md) | --- | [tktk Link]() | Create in-memory elements and add them to the DOM.  |
+|  **Total Module**                                        | --- | ---            | ---     |
 
 ## Additional content 
 
@@ -21,9 +22,10 @@ tktk What is the takeaway of this module?
 
 ### 🚀 Level Up
 
-- [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-01.md)
-- [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-02.md)
-- [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-03.md)
+- [Event bubbling](./level-up/event-bubbling.md)
+- [Event delegation](./level-up/event-delegation.md)
+- [Removing event listeners](./level-up/removing-event-listeners.md)
+- [Other methods to add event listeners ](./level-up/other-methods.md)
 
 ## Internal resources
 
