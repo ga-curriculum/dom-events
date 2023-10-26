@@ -1,6 +1,6 @@
-# DOM Events - Level Up - Alternate Event Listener Techniques
 
-![Hero image](./assets/hero-alternate-event-listener-techniques.png)
+
+# ![DOM Events - Level Up - Alternate Event Listener Techniques](./assets/hero-alternate-event-listener-techniques.png)
 
 There are two additional approaches for registering event listeners. The following examples demonstrate a 'click' event: 
 
