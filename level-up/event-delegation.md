@@ -1,6 +1,4 @@
-# DOM Events - Level Up - Event Delegation
-
-![Hero image](./assets/hero.png)
+# ![DOM Events - Level Up - Event Delegation](./assets/hero-event-delegation.png)
 
 Imagine a web app, like a game with many elements that need to respond to a click. There could be tens, hundreds, or more of these elements.
 

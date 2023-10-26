@@ -1,6 +1,4 @@
-# DOM Events - Responding to Events
-
-![Hero image](./assets/hero.png)
+# ![DOM Events - Responding to Events](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to create in-memory elements and add them to the DOM. 
 

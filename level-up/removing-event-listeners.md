@@ -1,6 +1,4 @@
-# DOM Events - Level Up - Removing Event Listeners
-
-![Hero image](./assets/hero.png)
+# ![DOM Events - Level Up - Removing Event Listeners](./assets/hero-removing-event-listeners.png)
 
 It’s possible to remove an added event listener; however, only if a named function was used as the callback:
 

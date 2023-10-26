@@ -1,6 +1,4 @@
-# DOM Events - References
-
-![Hero image](./assets/hero.png)
+# ![DOM Events - References](./assets/hero.png)
 
 ## Lesson references
 

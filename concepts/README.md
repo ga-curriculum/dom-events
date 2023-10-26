@@ -1,6 +1,4 @@
-# DOM Events - Concepts 
-
-![Hero image](./assets/hero.png)
+# ![DOM Events - Concepts ](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to clearly define the concept and significance of DOM events.
 
