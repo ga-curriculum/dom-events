@@ -1,6 +1,4 @@
-# DOM Events
-
-![Hero image](./assets/tktkhero-main.png)
+# ![DOM Events](./assets/hero.png)
 
 ## Module overview
 

@@ -1,6 +1,4 @@
-# DOM Events - Fundamentals
-
-![Hero image](./assets/hero.png)
+# ![DOM Events - Fundamentals](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to compose event listeners with appropriate syntax.
 
