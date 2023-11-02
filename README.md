@@ -12,6 +12,7 @@ This module introduces DOM events in JavaScript.
 | [Concepts](./concepts/README.md)                         | -- | -- | Clearly define the concept and significance of DOM events. |
 | [Fundamentals](./fundamentals/README.md)                 | -- | -- | Compose event listeners with appropriate syntax. |
 | [Responding to Events](./responding-to-events/README.md) | -- | -- | Create in-memory elements and add them to the DOM.  |
+| [Named Callbacks](./named-callbacks/README.md)           | -- | -- | Use named callback functions to make event handlers share events.  |
 | **Total Module**                                         | -- | -- | -- |
 
 ## Additional content 

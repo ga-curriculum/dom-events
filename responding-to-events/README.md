@@ -104,8 +104,6 @@ It's time for the moment we've all been waiting for. The `<input>` element has a
 We can use this property to set the `textContent` of the new `commentElement`:
 
 ```javascript
-const btnElement = document.querySelector('button')
-
 commentButtonElement.addEventListener('click', () => {
   const commentElement = document.createElement('li');
   commentElement.textContent = inputElement.value;
