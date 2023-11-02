@@ -13,33 +13,63 @@ mkdir dom-events
 cd dom-events
 ```
 
-Then, create an `app.js` and an `index.html` file. These files will hold your work for this lecture:
+When you're in this directory, create two directories inside it: `js` to hold your JavaScript files for this lecture and `css` to hold your CSS files for this lecture.
 
 ```bash
 mkdir js css
-touch index.html js/app.js css/style.css
 ```
 
-With the files created, open the contents of the directory in VS Code:
+Then, create an `index.html` file in your project directory, an `app.js` in your `js` directory, and a `style.css` file in your `css` directory. These files will hold your work for this lecture:
+
+```bash
+touch index.html ./js/app.js ./css/style.css
+```
+
+With the directories and files created, open the contents of the directory in VS Code:
 
 ```bash
 code .
 ```
 
-Open the `index.html` file and add HTML boilerplate. Then make use of the `app.js` file by adding this line inside the `<head>` tag:
+Open the `index.html` file and add HTML boilerplate by typing `!` and then hitting the `Tab` key. Then make use of the `app.js` file inside of the `js` directory by adding this line inside the `<head>` tag:
 
 ```html
 <script defer src="./app.js"></script>
 ```
 
-With this setup complete, we'll have two methods at our disposal for executing the code we write in `app.js`:
+Hook up the `style.css` file inside of the `css` directory:
 
-- Open the `index.html` file in your browser and access the console output in your browser's dev tools.
+<link rel="stylesheet" href="./css/style.css">
 
-- Use `node` to execute the `app.js` file directly by using this command in your terminal:
+And include a little bit of CSS inside of that `style.css` file:
 
-```bash
-node app.js
+```css
+body {
+  font-family: system-ui, sans-serif;
+}
+
+div {
+  background-color: darkslategrey;
+  /* This makes the width of the div the width required by its content! */
+  width: fit-content;
+  padding: 8px;
+}
+
+button {
+  margin: 8px;
+}
+
 ```
 
-While either method is acceptable, you should use the same method as your instructor for simplicity.
+Finally, let's add an some starter HTML inside of the `<body>` in `index.html` as follows:
+
+```html
+  <h1 id="main-title">DOM Events Blog Post</h1>
+  <p>DOM Events are the key to interactivity!</p>
+  <div>
+    <button id="like-button">Like this post!</button>
+    <button id="dislike-button">Dislike this post!</button>
+  </div>
+```
+
+Open the `index.html` file in your browser.

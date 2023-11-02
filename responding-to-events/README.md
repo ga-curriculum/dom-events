@@ -1,95 +1,125 @@
 # ![DOM Events - Responding to Events](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to create in-memory elements and add them to the DOM. 
+**Learning objective:** By the end of this lesson, students will be able to respond to DOM events by interacting with the DOM. 
 
 ## App overview
 
-Add the following code to the boilerplate: 
+We're going to build out the rest of this application so that users are able to add a comment to a list by typing their comment in an input and clicking a button to submit their comment.
+
+Add the following code below the existing `<div>` element inside of the `<body>`: 
 
 ```html
-  <h3>Comments</h3>
+  <h2>Comments</h2>
   <ul>
     <li>Reading is what? Fundamental!</li>
   </ul>
+  <h3>Add a comment</h3>
   <input>
-  <button>Add Comment</button>
+  <button id="comment-button">Add comment</button>
 ```
 
-When we click the **Add Comment** `button`, we want to create a new comment with the text entered in the input. We can add a `click` event listener to pretty much any element - not just buttons. However, buttons are pre-styled to look and act clickable, so you should use them when possible.
+When we click the **Add comment** `button`, a new comment should be created using the text entered in the input.
 
-## Creating an in-memory element
+As you've already seen, the `'click'` event listener can be added to elements that you wouldn't typically expect to be able to interact with as a user - such as the `<h1>` element. However, interactive elements like buttons are pre-styled to look and act clickable. Users everywhere also understand how to use interactive elements such as buttons. Therefore, you should use event listeners on these more interactive elements to guide user behaviors whenever possible.
 
-If we want to add a new comment, we’re going to need to create a new `<li>` element. Here’s how we can do it using the [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method:
+## Set up the button event listener
+
+As we already established, the event we want to respond to is the user clicking the **Add comment** button, so we're going to need to start by selecting that element from out of the DOM:
+
+```javascript
+const commentButtonElement = document.querySelector('#comment-button');
+console.dir(commentButtonElement);
+```
+
+Check the console to confirm you selected the correct element. With that work done, we'll attach an event listener to it:
+
+```javascript
+commentButtonElement.addEventListener('click', () => {
+  console.log("I work!");
+});
+```
+
+Return to the browser, then click on the button. If everything goes well, then you will see the string "I work!" in the console when you click on the **Add comment** button.
+
+> ♻ **Repeatable pattern**: Use console dir/log to check your work when writing event listeners. Small steps are the path to success, and it's easier to troubleshoot small things along the way than to backtrack later through every piece of this function.
+
+## Create an `<li>` element and add it to the page
+
+We will start small in the event listener, working our way up to the intended functionality. Remove the `console.log()` we added to confirm the event listener works and replace it with a line to create a new `<li>` element. To do this, you'll use the `document` object's [`createElement()` method](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement):
+
+```javascript
+commentButtonElement.addEventListener('click', () => {
+  const commentElement = document.createElement('li');
+});
+```
+
+We've called this a `commentElement` because that's what it will be - a single comment that is part of our larger comment list. It's important to remember that just because we created the element doesn't mean it's visible on the page yet - we haven't told it where to go! We should handle that next by selecting the `<ul>` element out of the DOM so that we can add the new comment inside of the list:
+
+```javascript
+const commentListElement = document.querySelector('ul');
+console.dir(commentListElement);
+```
+
+Confirm you selected the correct element from the DOM. Feel free to remove the `console.dir()` afterwords. With that work done, we can display the element we've created by appending it to the `commentListElement`.
+
+```javascript
+commentButtonElement.addEventListener('click', () => {
+  const commentElement = document.createElement('li');
+  commentListElement.appendChild(commentElement);
+});
+```
+
+Every time you click, an empty list item will be added to the comment list. We have not added any text to the element, so none is visible. We'll do that soon. 
+
+Before that, take a moment to notice how our variables have been named and how it helps our code read a little less like code and a little more like English. When the user clicks on the comment button, a new comment is created and is appended to the comment list. All of these things are elements in the DOM, which is immediately apparent by the variable name.
+
+Naming things in code is challenging, but taking the time to think through what variables represent and naming them to match that can be invaluable to help yourself and others understand what exactly is happening in your code, especially when things start getting more complex.
+
+Let's add some text to the `commentElement` before we place it in the DOM!
+
+## Setting text on the `commentElement`
+
+Although our ultimate goal is to set the text currently written in the `<input>` element as the text in the `commentElement`, we'll start by just adding some generic text:
+
+```javascript
+commentButtonElement.addEventListener('click', () => {
+  const commentElement = document.createElement('li');
+  commentElement.textContent = 'Can you hear me?';
+  commentListElement.appendChild(commentElement);
+});
+```
+
+When you click the **Add comment** button, a new list item is created with `"Can you hear me?"` as the text content. But instead of this placeholder text, we want to display whatever text the user has typed into the `<input>` element.
+
+## 🧠 You Do
+
+Select the `<input>` element out of the DOM. Assign it to a variable called `inputElement`.
+
+Don't forget to `console.dir()` the `inputElement` to be sure you're set up for success in future steps! Don't get rid of this for now; we'll use it again momentarily.
+
+## Setting text on the `commentElement` to the value of `inputElement`
+
+It's time for the moment we've all been waiting for. The `<input>` element has a special property called `value` that holds whatever the user has typed inside the `<input>` element. You can inspect the `console.dir()` of the `inputElement` to confirm this!
+
+We can use this property to set the `textContent` of the new `commentElement`:
 
 ```javascript
 const btnElement = document.querySelector('button')
 
-btnElement.addEventListener('click', function(event) {
-  const liElement = document.createElement('li')
-  console.log(liElement)
-})
+commentButtonElement.addEventListener('click', () => {
+  const commentElement = document.createElement('li');
+  commentElement.textContent = inputElement.value;
+  commentListElement.appendChild(commentElement);
+});
 ```
 
-> 🧠 At this point, the element is in memory only and is not part of the DOM (yet).
+Write some text in the input and click the button. Success!
 
-## Setting text on the in-memory element
+## 🧠 You Do
 
-Okay, we have a new `<li>` element created and assigned to a variable named `li`, but it has no content. We want to get whatever text the user has typed into the `<input>` element.
+There are two things we can do to improve the user experience of this application:
 
-As an exercise, find the property that holds the content of an `<input>`. Hint: Select the `<input>`, `console.dir` it out and explore! When you find the property - reply to my message in slack!
+- If the input has no content, a new `<li>` should not be created in the comment list.
+- Remove the text from the `<input>` when the user submits a new comment after their comment has been added to the comment list.
 
-So, now we can set the `textContent` of the new `<li>`:
-
-```javascript
-const btnElement = document.querySelector('button')
-// add the following: 
-const inputElement = document.querySelector('input')
-
-btnElement.addEventListener('click', function(event) {
-  const liElement = document.createElement('li')
-  // add the following: 
-  liElement.textContent = inputElement.value
-})
-```
-
-Now the new `<li>` is ready to be added to the DOM!
-
-## Placing the in-memory element into the DOM
-
-There are several ways to add DOM elements to the document using JavaScript. A common way to add new elements to another element is by using the `appendChild` method like this:
-
-```javascript
-const btnElement = document.querySelector('button')
-const inputElement = document.querySelector('input')
-// add the following: 
-const ulElement = document.querySelector('ul')  
-
-btnElement.addEventListener('click', function(event) {
-  const liElement = document.createElement('li')
-  liElement.textContent = inputElement.value
-  // add the following: 
-  ulElement.appendChild(liElement)
-})
-```
-
-Note that the new element is appended as the last child. Test it out - nice!
-
-## Clearing text from inputs
-
-The new comment has been added, but if we want to improve the UX, we have one more task - clear out the `<input>`. 
-
-```javascript
-const btnElement = document.querySelector('button')
-const inputElement = document.querySelector('input')
-const ulElement = document.querySelector('ul')  
-
-btnElement.addEventListener('click', function(event) {
-  const liElement = document.createElement('li')
-  liElement.textContent = inputElement.value
-  ulElement.appendChild(liElement)
-  // add the following: 
-  inputElement.value = ''
-})
-```
-
-We already have `ulElement` cached, so we can simply reassign the `value` property on it to an empty string. This effectively clears the input by resetting it to `''`. 
+Try to tackle these on your own. You won't need to use any properties we haven't already discussed to accomplish these tasks. 

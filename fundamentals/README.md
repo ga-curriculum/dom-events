@@ -2,39 +2,48 @@
 
 **Learning objective:** By the end of this lesson, students will be able to compose event listeners with appropriate syntax.
 
-## Event listeners
+## Listening to events
 
-An event listener is a function; specifically, a callback function called when an event fires. Event listeners may also be referred to as event handlers.
-
-Here is the common syntax for registering an event listener for a given event:
+We use the [`addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) method to add events to DOM elements. Here is the common syntax for doing this:    
 
 ```javascript
-element.addEventListener(<event-name>, <callback>)
+element.addEventListener(type, callbackFunction)
 ```
-- **`event-name`** is the name of the event (string).
-- **`callback`** is the function we want to be executed when the event happens. When called by the JS engine, it will be passed an *event object* as an argument.
 
+1. The element we want to add an event to.
+2. The `addEventListener()` method. It accepts two arguments:
+   1. The `type`. This should be a string and indicates the event that the event listener will respond to.
+   2. The `callbackFunction`. The `callbackFunction` is a callback function that will be executed when the event `type` we've specified happens on the `element` we've specified.
 
-> ♻️ Repeatable Pattern: In this unit, we will always use the addEventListener method to attach event listeners to elements.
+tktk Hunter, can you make a syntax graphic for the above?
 
-## The 'click' event
+As a reminder, a callback function is a function passed into another function as an argument. You might recall using callback functions with the `forEach()` method. The callback function provided to the `forEach()` method is executed once for every item inside an array.
 
-An element receives a [click event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) when a mouse's primary mouse button is pressed and released. Other pointing device buttons can also trigger a click event, but we'll primarily be working with mouse clicks.
+The `callbackFunction` above functions in a very similar way, but the code inside of it will be executed in response to an event on the corresponding element.
 
-To listen for a 'click' event, you pass the string 'click' as the addEventListener's `event-name`: 
+> ♻️ Repeatable Pattern: When working directly with the DOM, we always use the `addEventListener()` method to attach event listeners to elements.
+
+## The `'click'` event
+
+Let's build an event listener that will respond to one of the most common types of events - the `'click'` event. We'll add this to the `<button id="like-button">` element we created during setup.
+
+An element receives a [`'click'` event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) when a mouse's primary mouse button is pressed and released. Other pointing devices can trigger a `'click'` event, such as a finger tapping the element on a mobile device with a touch screen. However, we'll primarily be working with mouse clicks.
+
+Let's start by selecting the `<button id="like-button">` element from the DOM and create a variable called `likeButtonElement` to keep track of it.
 
 ```javascript
-addEventListener('click', (event) => {
-  console.log(event)
+const likeButtonElement = document.querySelector('#like-button');
+console.dir(likeButtonElement);
+```
+
+After you've confirmed that you've selected the `<button id="like-button">` element from the DOM, you can remove the `console.dir()`.
+
+After that, attach our first event listener to that element. To listen for a click event, pass the string `'click'` as the `type`. The callback function will log the string `'You clicked me!'`: 
+
+```javascript
+likeButtonElement.addEventListener('click', () => {
+  console.log('You clicked me!');
 });
 ```
 
-## The 'event' object
-
-Examining the **event object** provided as an argument to our event listener reveals lots of useful information about the event!
-
-Of special interest are:
-
-- Several `...X` and `...Y` properties that provide where the click occurred.
-- The `target` property, which holds a reference to the DOM element that triggered (dispatched) the event.
-- Note that JS’s `this` keyword within the listener function will be set to the DOM element that `addEventListener` was called on.
+Return to your browser and open your DevTools. Click on the `<button id="like-button">` element in the browser. You should see a message logged to the console: `'You clicked me!'` - congrats! You've built your first event listener!

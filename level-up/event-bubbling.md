@@ -8,9 +8,9 @@ When an event occurs on an element, that event, whether it is listened to on tha
 2. `<div>` Event bubbles up to the parent element.
 3. `<body>` Event continues bubbling up to outer elements.
 
-All event listeners registered for the same event, such as `click`, will be invoked along the path to the `document` element - unless one of those listeners calls the event object’s `stopPropagation` method. 
+All event listeners registered for the same event, such as `click`, will be invoked along the path to the `document` element - unless one of those listeners calls the event object's `stopPropagation` method. 
 
-Let’s see some bubbling in action. Add the following to your `index.html`:
+Let's see some bubbling in action. Add the following to your `index.html`:
 
 ```html
 <form>This is the form

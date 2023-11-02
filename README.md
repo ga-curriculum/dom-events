@@ -8,11 +8,11 @@ This module introduces DOM events in JavaScript.
 
 | Lesson | Video Time | Video | Learning Objective |
 | ------ |:----------:|:-----:| ------------------ |
-| [Setup](./setup/README.md) | --- | [tktk Link]() | --- |
-| [Concepts](./concepts/README.md) | --- | [tktk Link]() | Clearly define the concept and significance of DOM events. |
-| [Fundamentals](./fundamentals/README.md) | --- | [tktk Link]() | Compose event listeners with appropriate syntax. |
-| [Responding to Events](./responding-to-events/README.md) | --- | [tktk Link]() | Create in-memory elements and add them to the DOM.  |
-|  **Total Module**                                        | --- | ---            | ---     |
+| [Setup](./setup/README.md)                               | -- | -- | -- |
+| [Concepts](./concepts/README.md)                         | -- | -- | Clearly define the concept and significance of DOM events. |
+| [Fundamentals](./fundamentals/README.md)                 | -- | -- | Compose event listeners with appropriate syntax. |
+| [Responding to Events](./responding-to-events/README.md) | -- | -- | Create in-memory elements and add them to the DOM.  |
+| **Total Module**                                         | -- | -- | -- |
 
 ## Additional content 
 
