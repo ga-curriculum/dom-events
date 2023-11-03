@@ -45,7 +45,9 @@ const handleReaction = (event) => {
 }
 ```
 
-If you click on the like button, you'll see two identical logs printed to the console. That's because they're the same exact thing!
+If you click on the like button, you'll see two identical logs printed to the console. That's happening because they're the same exact thing!
+
+
 
 So far when we've used callback functions they've typically been anonymous, or unnamed. Take the function we're using for the like button on our page:
 
