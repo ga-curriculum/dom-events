@@ -2,6 +2,8 @@
 
 ![Hero image](../assets/hero.png)
 
+***Nothing here yet.***
+
 ---
 
 🏗️ **Under Construction**

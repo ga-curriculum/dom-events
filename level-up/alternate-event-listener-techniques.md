@@ -1,23 +1,21 @@
-
-
 # ![DOM Events - Level Up - Alternate Event Listener Techniques](./assets/hero-alternate-event-listener-techniques.png)
 
-There are two additional approaches for registering event listeners. The following examples demonstrate a 'click' event: 
+There are two additional approaches for registering event listeners. The following examples demonstrate a `'click'` event: 
 
 1. In the HTML (inline):
 
-```html
-<button onclick="submit()">Add Comment</button>
-```
+   ```html
+   <button onclick="submit()">Add Comment</button>
+   ```
 
-Using the HTML approach (`onclick="reset()"`) is typically frowned upon because it requires that the function be in the global scope. In addition, this, like inline styling, somewhat breaks the separation of concerns design principle.
+   Using the HTML approach (`onclick="submit()"`) is typically frowned upon because it requires that the function be in the global scope. In addition, this, like inline styling, somewhat breaks the separation of concerns design principle.
 
 2. Assigning to DOM elements' properties: 
 
-```javascript
-btnElement.onclick = submit
-```
+   ```javascript
+   btnElement.onclick = submit
+   ```
 
-The DOM element approach (`element.onclick`) is slightly better than the HTML approach because it does not require a globally scoped function.
+   The DOM element approach (`element.onclick`) is slightly better than the HTML approach because it does not require a globally scoped function.
 
-Ultimately, the `addEventListener` approach is the best practice because it has the flexibility of adding multiple listener functions.
+Ultimately, the `addEventListener()` approach is the best practice because it has the flexibility of adding multiple listener functions. Some frameworks will make use of these methods though, so it's good to be able to recognize their use.

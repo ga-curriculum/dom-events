@@ -2,7 +2,7 @@
 
 When an event occurs on an element, that event, whether it is listened to on that element or not, bubbles up through the DOM until it reaches the `document` object.
 
-<img src="./assets/bubbling.png" alt="event bubbling" width="100%">
+![A diagram of event bubbling. On the page there is a button element inside of a div element inside of the body element. When the event is clicked, the event travels up from the button, to the div, and to the body.](./assets/bubbling.png)
 
 1. `<button>` Event triggered on the innermost element.
 2. `<div>` Event bubbles up to the parent element.
@@ -10,62 +10,75 @@ When an event occurs on an element, that event, whether it is listened to on tha
 
 All event listeners registered for the same event, such as `click`, will be invoked along the path to the `document` element - unless one of those listeners calls the event object's `stopPropagation` method. 
 
-Let's see some bubbling in action. Add the following to your `index.html`:
+We'll observe event bubbling from the perspective of the like and dislike buttons that we created earlier:
 
 ```html
-<form>This is the form
-  <div>This is the div
-    <p>This is the p</p>
+<body>
+  <!-- other elements -->
+  <div>
+    <button id="like-button">Like this post!</button>
+    <button id="dislike-button">Dislike this post!</button>
   </div>
-</form>
+  <!-- other elements -->
+<body>
 ```
+
+To help us observe event bubbling, we'll select the body and the div from the DOM and cache them in `bodyElement` and `divElement`, respectively.
 
 Next, in `js/app.js`, attach a 'click' listener to each element: 
 
 ```javascript
-const formElement = document.querySelector('form')
+const bodyElement = document.querySelector('body')
 const divElement = document.querySelector('div')
-const pElement = document.querySelector('p')
 
-formElement.addEventListener('click', () => {
-  console.log('form')
+bodyElement.addEventListener('click', () => {
+  console.log('body')
 })
 
 divElement.addEventListener('click', () => {
   console.log('div')
 })
 
-pElement.addEventListener('click', () => {
-  console.log('p')
-})
+const handleReaction = (event) => {
+
+  // add a console log for the target's id:
+  console.log(event.target.id)
+
+  if (event.target.id === 'like-button') {
+    likesCount = likesCount + 1;
+    likeButtonElement.textContent = `${likesCount} like(s). Like this post!`;
+  } else {
+    dislikesCount = dislikesCount + 1;
+    dislikeButtonElement.textContent = `${dislikesCount} dislike(s). Dislike this post!`;
+  }
+};
 ```
 
-To make the elements more visible, add the following CSS to `css/style.css`: 
+Try clicking on the buttons, the shaded area around the buttons, and the body. Observe the console and see event bubbling in action!
 
-```css
-form {
-  background-color: cornflowerblue;
-  padding: 15px;
-}
+## Event delegation
 
-div {
-  background-color: darkcyan;
-  width: 75%;
-  padding: 10px;
-}
+Imagine a web app, like a game, with many elements that respond to a click event. There could be tens, hundreds, or more of these elements.
 
-p {
-  background-color: darkkhaki;
-  width: 50%;
-  padding: 10px;
-}
+That would be a lot of listeners and would take a lot of code to make work. Plus, whenever a new element is added, an event listener must be registered!
+
+Event bubbling allows us to implement what's known as event delegation. Event delegation allows us to register a single event listener that can respond to events triggered by any of its descendants. Super handy!
+
+Test this with the `divElement` event listener you just created - have it call the `handleReaction` function instead:
+
+```javascript
+// comment out the lines attaching event listeners to your buttons
+// likeButtonElement.addEventListener('click', handleReaction);
+// dislikeButtonElement.addEventListener('click', handleReaction);
+
+// make the divElement event listener call the handleReaction function
+divElement.addEventListener('click', handleReaction)
 ```
 
-Then link to the style.css file from your HTML by adding this line to your HTML head:
+We replaced two event listeners with one! Notably, the `event` object's `target` property is set to the actual element clicked, so all of the code we already wrote is largely still valid!
 
-```html
-  <link rel="stylesheet" href="./css/style.css">
-```
+## 🧠 You Do
 
-In your browser, click on each element and examine the console to see event bubbling in action! 
+There has been a bug introduced into this code when we made this change. Track it down, and fix it.
 
+Hint: Click on the shaded `<div>` element in the browser (not the buttons), observe what's happening, and figure out why!

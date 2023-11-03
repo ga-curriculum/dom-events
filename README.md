@@ -1,30 +1,37 @@
 # ![DOM Events](./assets/hero.png)
 
-## Module overview
+## About
 
 This module introduces DOM events in JavaScript.
 
-## Content outline
+## Prerequisites
 
-| Lesson | Video Time | Video | Learning Objective |
-| ------ |:----------:|:-----:| ------------------ |
-| [Setup](./setup/README.md)                               | -- | -- | -- |
-| [Concepts](./concepts/README.md)                         | -- | -- | Clearly define the concept and significance of DOM events. |
-| [Fundamentals](./fundamentals/README.md)                 | -- | -- | Compose event listeners with appropriate syntax. |
-| [Responding to Events](./responding-to-events/README.md) | -- | -- | Create in-memory elements and add them to the DOM.  |
-| [Named Callbacks](./named-callbacks/README.md)           | -- | -- | Use named callback functions to make event handlers share events.  |
-| **Total Module**                                         | -- | -- | -- |
+- tktk
 
-## Additional content 
+## Content
+
+| Lesson | Video Time | Video | Skills |
+| ------ |:----------:|:-----:| ------ |
+| [Setup](./setup/README.md)                               | -- | -- | --                                                                                      |
+| [Concepts](./concepts/README.md)                         | -- | -- | Clearly define the concept and significance of DOM events.                              |
+| [Fundamentals](./fundamentals/README.md)                 | -- | -- | Compose event listeners with appropriate syntax.                                        |
+| [Responding to Events](./responding-to-events/README.md) | -- | -- | Create in-memory elements and add them to the DOM.                                      |
+| [Named Callbacks](./named-callbacks/README.md)           | -- | -- | Use named callback functions to make event handlers.                                    |
+| [The `event` Object](./the-event-object/README.md)       | -- | -- | Use the `event` object to allow multiple elements to share one named callback function. |
+| **Total content**                                        | -- | -- | --                                                                                      |
+
+## Level Up content
+
+| Lesson | Video Time | Video | Skills |
+| ------ |:----------:|:-----:| ------ |
+| [Event Bubbling](./level-up/event-bubbling.md)                                           | -- | -- | -- |
+| [Removing Event Listeners](./level-up/removing-event-listeners.md)                       | -- | -- | -- |
+| [Alternate Event Listener Techniques](./level-up/alternate-event-listener-techniques.md) | -- | -- | -- |
+| **Total Level Up content**                                                               | -- | -- | -- |
+
+## References 
 
 📖 [Reference Materials](./references/README.md)
-
-### 🚀 Level Up
-
-- [Event bubbling](./level-up/event-bubbling.md)
-- [Event delegation](./level-up/event-delegation.md)
-- [Removing event listeners](./level-up/removing-event-listeners.md)
-- [Other methods to add event listeners ](./level-up/other-methods.md)
 
 ## Internal resources
 
