@@ -1,6 +1,6 @@
-# DOM Events - Video Hub
+# ![DOM Events - Video Hub](../../assets/hero.png)
 
-![Hero image](../../assets/hero.png)
+tktk Hunter, Video Hub hero here
 
 Here you'll find the outlines and the assets used in video content, as well as the original and final video content. Notes to help record specific content can also be found here, when applicable.
 

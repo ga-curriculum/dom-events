@@ -1,6 +1,6 @@
-# DOM Events - Instructor Guide
+# ![DOM Events - Instructor Guide](../assets/hero.png)
 
-![Hero image](../assets/hero.png)
+tktk Hunter, Instructor guide hero here
 
 ***Nothing here yet.***
 

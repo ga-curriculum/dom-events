@@ -1,6 +1,6 @@
-# DOM Events - Release Notes
+# ![DOM Events - Release Notes](../assets/hero.png)
 
-![Hero image](../assets/hero.png)
+tktk Hunter, Release Notes hero here
 
 ## Version 1.0 - Updates from legacy content
 
