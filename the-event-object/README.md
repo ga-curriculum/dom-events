@@ -1,4 +1,4 @@
-# ![DOM Events - The event Object](./assets/tktkhero.png)
+# ![DOM Events - The event Object](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will understand the utility of the `event` object and how it can help us reuse some functionality. 
 

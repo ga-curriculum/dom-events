@@ -1,6 +1,4 @@
-# ![DOM Events - Instructor Guide](../assets/hero.png)
-
-tktk Hunter, Instructor guide hero here
+# ![DOM Events - Instructor Guide](../assets/instructor-guide.png)
 
 ***Nothing here yet.***
 
