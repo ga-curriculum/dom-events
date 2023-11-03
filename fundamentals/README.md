@@ -6,9 +6,7 @@
 
 We use the [`addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) method to add events to DOM elements. Here is the common syntax for doing this:    
 
-```javascript
-element.addEventListener(type, callbackFunction)
-```
+![Event listener anatomy](./assets/addEventListener.png)
 
 1. The element we want to add an event to.
 2. The `addEventListener()` method. It accepts two arguments:
@@ -17,7 +15,6 @@ element.addEventListener(type, callbackFunction)
    
    2b. The `callbackFunction`. The `callbackFunction` is a callback function that will be executed when the event `type` we've specified happens on the `element` we've specified.
 
-tktk Hunter, can you make a syntax graphic for the above?
 
 As a reminder, a callback function is a function passed into another function as an argument. You might recall using callback functions with the `forEach()` method. The callback function provided to the `forEach()` method is executed once for every item inside an array.
 

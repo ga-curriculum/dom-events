@@ -1,4 +1,4 @@
-# ![DOM Events - Named Callbacks](./assets/tktkhero.png)
+# ![DOM Events - Named Callbacks](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to construct an event listener that calls a named function. 
 
