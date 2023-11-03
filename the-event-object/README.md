@@ -19,7 +19,33 @@ After you've completed the above tasks when you click either the like or dislike
 
 ## Like/dislike functionality overview
 
+We're going to change up the `handleReaction` function so that it will work for both the like button and the dislike button. To do this, we're going to need to be able to figure out which button the user clicked on. We don't currently have a mechanism to do this, but we can access to one - the `event` object. 
 
+The `event` object is passed to the callback function as the first argument, and holds details about the event that triggered the event listener. Let's make use of it and see what it holds:
+
+```javascript
+// make the handleReaction function receive an event, and console.dir it.
+const handleReaction = (event) => {
+  console.dir(event)
+  likesCount = likesCount + 1;
+  likeButtonElement.textContent = `${likesCount} like(s). Like this post!`;
+}
+```
+
+Note that `event` will often be abbreviated as `evt` or even `e` (although we won't go that far). Inspecting the `event` object, you'll find many properties, but probably most important for us is the `target` property. 
+
+`event.target` represents the element in the DOM that triggered the event. We can confirm this. Change up the console.dir in the `handleReaction` function to log `event.target`, and add another to log the `likeButtonElement`:
+
+```javascript
+const handleReaction = (event) => {
+  console.dir(event.target)
+  console.dir(likeButtonElement)
+  likesCount = likesCount + 1;
+  likeButtonElement.textContent = `${likesCount} like(s). Like this post!`;
+}
+```
+
+If you click on the like button, you'll see two identical logs printed to the console. That's because they're the same exact thing!
 
 So far when we've used callback functions they've typically been anonymous, or unnamed. Take the function we're using for the like button on our page:
 
