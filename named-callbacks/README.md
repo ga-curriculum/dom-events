@@ -4,7 +4,7 @@
 
 ## Named callbacks
 
-So far when we've used callback functions they've typically been anonymous, or unnamed. Take the function we're using for the like button on our page:
+So far, when we've used callback functions, they've typically been anonymous or unnamed. Take the function we're using for the like button on our page:
 
 ```javascript
 likeButtonElement.addEventListener('click', () => {
@@ -20,7 +20,7 @@ This:
 }
 ```
 
-is the anonymous function we've provided to this event listener. It has no name. However, here is nothing stopping us from giving it a name and calling that function in the event listener. Check it out, and write this function ***above*** your event listeners:
+is the anonymous function we've provided to this event listener. It has no name. However, nothing stops us from naming it and calling that function in the event listener. Check it out, and write this function ***above*** your event listeners:
 
 ```javascript
 const handleLike = () => {
@@ -28,7 +28,7 @@ const handleLike = () => {
 }
 ```
 
-These functions are commonly called event handlers, so the function names we choose will typically reflect this by including the word handle in their name, as in `handleLike` above. Now we can rewrite our event listener to use this function:
+These functions are commonly called event handlers, so the function names we choose will typically reflect this by including the word handle in their name, as in `handleLike` above. Now, we can rewrite our event listener to use this function:
 
 ```javascript
 likeButtonElement.addEventListener('click', handleLike);
@@ -38,7 +38,7 @@ Notice how we do not invoke this function when we've provided it as a callback! 
 
 ## Like functionality
 
-Let's implement some rudamentary like functionality. This will essentially just count the number of times a user has clicked the like button, but it's a good start to managing some data in this application.
+Let's implement some rudimentary like functionality. This functionality will count the times a user has clicked the like button, but it's a good start to managing some data in this application.
 
 We're going to need the ability to count the number of times the user has clicked the like button, which sounds like a great use for a variable:
 
