@@ -27,11 +27,11 @@ To interact with this app, the user might want to:
 
 What happens when the user clicks the button? This is where events come into play. For the app to function as the user expects, the click would trigger a function that performs a series of tasks:
 
-2. Capture text entered into the `<input>` element.
-1. Create a new list item 
-3. Set the content of the new list item to the text entered by the user
-4. Place the new list item into the list
-5. Finally, for a better user experience, clear the input so its ready for the next item
+  1. Capture text entered into the `<input>` element.
+  2. Create a new list item 
+  3. Set the content of the new list item to the text entered by the user
+  4. Place the new list item into the list
+  5. Finally, for a better user experience, clear the input so its ready for the next item
 
 All of these steps require JavaScript to perform the interactions with html elements on the screen.
 
