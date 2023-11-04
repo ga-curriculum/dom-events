@@ -4,17 +4,15 @@
 
 ## What are DOM events?
 
-Similar to how we use the term outside of programming, events are things that happen in a system which we can react to. 
+Imagine DOM events as triggers on a web page. They are like signals that tell the web page when something has occurred, and then the web page can respond to that signal automatically.
 
-DOM events are actions that produce a signal that something has happened on the DOM, and they provide the ability to automatically react to that event. 
-
-As a result, DOM events are the bedrock of web page interactivity. 
+In other words, DOM events are like the building blocks that make web pages interactive.
 
 ## Why do we use DOM events? 
 
-As programmers, we can write code which reacts to events that happen in the DOM - this allows us to implement *event-driven programming*. In event-driven programming, the majority of the code reacts to events triggered by users.
+Programmers use DOM events to create interactive web pages. It's like giving the web page the ability to listen and respond to what users do. When you click a button or type something, the web page can react, making it dynamic and engaging. 
 
-We can make web pages dynamic and respond to user action by manipulating the DOM using JavaScript.
+This allows us to implement *event-driven programming*. In event-driven programming, the majority of the code reacts to events triggered by users. This is made possible by using JavaScript to manipulate the DOM.
 
 For example, imagine a user is interacting with a small to-do application that looks like this:
 
@@ -22,31 +20,33 @@ For example, imagine a user is interacting with a small to-do application that l
 
 To interact with this app, the user might want to:
 
-- Type the text of the new to-do into an `<input>`
-- Click an `<button>` labeled **Add to-do**
+- Type the name of a new to-do item into an `<input>`
+- Click the `<button>` labeled **Add to-do**
 
 ![To-Do App Two](./assets/todo-app-two.png)
 
-So what happens next? This is where events come into play. For the app to function as the user expects when the button is clicked, the click would trigger a function that performs the following: 
+What happens when the user clicks the button? This is where events come into play. For the app to function as the user expects, the click would trigger a function that performs a series of tasks:
 
-1. Create a new element.
-2. Access the text entered into the `<input>` element.
-3. Set the content of the new element to that text.
-4. Place the new element on the page so that it's visible to the user.
-5. Finally, for a better user experience (UX), reset the input by clearing out the current text.
+2. Capture text entered into the `<input>` element.
+1. Create a new list item 
+3. Set the content of the new list item to the text entered by the user
+4. Place the new list item into the list
+5. Finally, for a better user experience, clear the input so its ready for the next item
 
-The above steps require our JavaScript app to interact with the DOM.
+All of these steps require JavaScript to perform the interactions with html elements on the screen.
 
 ![To-Do App Three](./assets/todo-app-three.png)
 
-Lots of events are generated within the browser, for example, all of these actions can trigger an event:
+## Types of events
+
+Lots of events can be generated within the browser. For example, all of these actions can trigger an event:
 
 - A user moves or clicks the mouse.
 - A user presses a key.
 - A form is submitted.
 - The page has finished loading or has been resized.
-- And so on.
+- And more!
 
 Take a quick peek at the [MDN documentation for events](https://developer.mozilla.org/en-US/docs/Web/Events) to see the sheer number of events we can respond to.
 
-Without DOM events, the code we write cannot interact with browser events.
+
