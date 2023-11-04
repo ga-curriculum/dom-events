@@ -23,8 +23,8 @@ To interact with this app, the user might want to:
 - Type the name of a new to-do item into an `<input>`
 - Click the `<button>` labeled **Add to-do**
 
-![To-Do App Two](./assets/todo-app-two.png)
 
+![To-Do App Two](./assets/todo-app-two.png)
 What happens when the user clicks the button? This is where events come into play. For the app to function as the user expects, the click would trigger a function that performs a series of tasks:
 
   1. Capture text entered into the `<input>` element.
@@ -33,9 +33,9 @@ What happens when the user clicks the button? This is where events come into pla
   4. Place the new list item into the list
   5. Finally, for a better user experience, clear the input so its ready for the next item
 
-All of these steps require JavaScript to perform the interactions with html elements on the screen.
-
 ![To-Do App Three](./assets/todo-app-three.png)
+
+All of these steps require JavaScript to perform the interactions with html elements on the screen.
 
 ## Types of events
 
