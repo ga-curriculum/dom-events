@@ -4,7 +4,7 @@
 
 ## What are DOM events?
 
-Imagine DOM events as triggers on a web page. When the user interacts with a webpage (by clicking, scrolling, typing, moving the cursor, etc) the browser broadcasts a message that an event has occurred.  Any JavaScript code that was listening for that message is then triggered, causing it to execute.  This code could do anything, but most of the time it will at some point update the DOM in some way.  By using events, a programmer can create a web page that reacts to a user's interactions.  In this way, DOM events are the building blocks that make web pages interactive.
+Imagine DOM events as triggers on a web page. When the user interacts with a webpage (by clicking, scrolling, typing, moving the cursor, etc) the browser broadcasts a message that an event has occurred.Any JavaScript code that was listening for that message is then triggered, causing it to execute. This code could do anything, but most of the time it will at some point update the DOM in some way. By using events, a programmer can create a web page that reacts to a user's interactions. In this way, DOM events are the building blocks that make web pages interactive.
 
 ## Why do we use DOM events? 
 
@@ -45,7 +45,7 @@ Lots of events can be generated within the browser. For example, all of these ac
 
 Take a quick peek at the [MDN documentation for events](https://developer.mozilla.org/en-US/docs/Web/Events) to see the sheer number of events we can respond to.
 
-## Knowledge Check
+## ❓ Review Questions
 
 - What are three examples of DOM events?
 - True or false: when a DOM event occurs, it triggers any JavaScript code that was listening for that event?

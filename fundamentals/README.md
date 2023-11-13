@@ -47,7 +47,7 @@ likeButtonElement.addEventListener('click', () => {
 
 Return to your browser and open your DevTools. Click on the `<button id="like-button">` element in the browser. You should see a message logged to the console: `'You clicked me!'` - congrats! You've built your first event listener!
 
-## Knowledge Check
+## ❓ Review Questions
 
 - Which of the following is not a part of the syntax for creating an event listener?
 	- The element on which the event occurred

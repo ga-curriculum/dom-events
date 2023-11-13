@@ -40,7 +40,7 @@ Notice how we do not invoke this function when we've provided it as a callback! 
 likeButtonElement.addEventListener('click', handleLike());
 ```
 
-Notice how the `console.log` is run as soon as the page is refreshed?  Also, when you click the like button, nothing will happen.  Always pass just the variable into `addEventListener` without the parentheses.  This way, `addEventListener` has a reference to the function that it can itself invoke later.
+Notice how the `console.log` is run as soon as the page is refreshed? Also, when you click the like button, nothing will happen. Always pass just the variable into `addEventListener` without the parentheses. This way, `addEventListener` has a reference to the function that it can itself invoke later.
 
 ## Like functionality
 
@@ -72,7 +72,7 @@ const handleLike = () => {
 
 Very nice!
 
-## Knowledge Checks
+## ❓ Review Questions
 
 - Which of the following is correct syntax for passing a named callback to `addEventListener`:
 	- `likeButtonElement.addEventListener('click', handleLike());`
@@ -80,8 +80,8 @@ Very nice!
 - True or false: when you assign a function to a variable, it becomes a named function
 - True or false: the following code passes `addEventListener` an anonymous function:
 
-```javascript
-likeButtonElement.addEventListener('click', () => {
-  console.log('You clicked me!');
-});
-```
+  ```javascript
+  likeButtonElement.addEventListener('click', () => {
+    console.log('You clicked me!');
+  });
+  ```
