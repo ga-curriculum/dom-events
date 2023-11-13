@@ -4,7 +4,7 @@
 
 ## Listening to events
 
-We use the [`addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) method to add events to DOM elements. Here is the common syntax for doing this:    
+We use the [`addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) method to add events to DOM elements. Here is the common syntax for doing this:
 
 ![Event listener anatomy](./assets/addEventListener.png)
 
@@ -46,3 +46,13 @@ likeButtonElement.addEventListener('click', () => {
 ```
 
 Return to your browser and open your DevTools. Click on the `<button id="like-button">` element in the browser. You should see a message logged to the console: `'You clicked me!'` - congrats! You've built your first event listener!
+
+## Knowledge Check
+
+- Which of the following is not a part of the syntax for creating an event listener?
+	- The element on which the event occurred
+	- The kind of event that took place?
+	- The callback function that is executed in response to the event
+	- The time at which the event occurred
+- How many arguments does `addEventListener` accept?
+- Where have we seen callback functions before?

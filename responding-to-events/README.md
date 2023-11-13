@@ -20,11 +20,11 @@ Add the following code below the existing `<div>` element inside of the `<body>`
 
 When we click the **Add comment** `button`, a new comment should be created using the text entered in the input.
 
-As you've already seen, the `'click'` event listener can be added to elements that you wouldn't typically expect to be able to interact with as a user - such as the `<h1>` element. However, interactive elements like buttons are pre-styled to look and act clickable. Users everywhere also understand how to use interactive elements such as buttons. Therefore, you should use event listeners on these more interactive elements to guide user behaviors whenever possible.
+Event listeners can be added to any element in the DOM, even elements that you wouldn't typically expect to be able to interact with as a user - such as an `<h1>` element. However, interactive elements like buttons are pre-styled to look and act clickable. Users everywhere also understand how to use interactive elements such as buttons. Therefore, you should use event listeners on these more interactive elements to guide user behaviors whenever possible.
 
 ## Set up the button event listener
 
-As we already established, the event we want to respond to is the user clicking the **Add comment** button, so we're going to need to start by selecting that element from out of the DOM:
+As we already established, the event we want to respond to is the user clicking the **Add comment** button, so we're going to need to start by selecting that element in the DOM:
 
 ```javascript
 const commentButtonElement = document.querySelector('#comment-button');
@@ -41,7 +41,7 @@ commentButtonElement.addEventListener('click', () => {
 
 Return to the browser, then click on the button. If everything goes well, then you will see the string "I work!" in the console when you click on the **Add comment** button.
 
-> ♻ **Repeatable pattern**: Use console dir/log to check your work when writing event listeners. Small steps are the path to success, and it's easier to troubleshoot small things along the way than to backtrack later through every piece of this function.
+> ♻ **Repeatable pattern**: Use console dir/log to check your work when writing event listeners. Small steps are the path to success. It's easier to troubleshoot small things along the way than to backtrack later through large chunks of code.
 
 ## Create an `<li>` element and add it to the page
 
@@ -53,7 +53,7 @@ commentButtonElement.addEventListener('click', () => {
 });
 ```
 
-We've called this a `commentElement` because that's what it will be - a single comment that is part of our larger comment list. It's important to remember that just because we created the element doesn't mean it's visible on the page yet - we haven't told it where to go! We should handle that next by selecting the `<ul>` element out of the DOM so that we can add the new comment inside of the list:
+We've called this a `commentElement` because that's what it will be - a single comment that is part of our larger comment list. It's important to remember that just because we created the element doesn't mean it's visible on the page yet - we haven't told it where to go! We should handle that next by selecting the `<ul>` element in the DOM so that we can add the new comment inside of the list:
 
 ```javascript
 const commentListElement = document.querySelector('ul');
@@ -71,13 +71,13 @@ commentButtonElement.addEventListener('click', () => {
 
 Every time you click, an empty list item will be added to the comment list. We have not added any text to the element, so none is visible. We'll do that soon. 
 
-Before that, take a moment to notice how our variables have been named and how it helps our code read a little less like code and a little more like English. When the user clicks on the comment button, a new comment is created and is appended to the comment list. All of these things are elements in the DOM, which is immediately apparent by the variable name.
+Before that, take a moment to notice how our variables have been named and how it helps our code read a little less like code and a little more like English. When the user clicks on the comment button, a new comment is created and is appended to the comment list. All of these things are elements in the DOM, which is immediately apparent by the variable names.
 
 Naming things in code is challenging, but taking the time to think through what variables represent and naming them to match that can be invaluable to help yourself and others understand what exactly is happening in your code, especially when things start getting more complex.
 
-Let's add some text to the `commentElement` before we place it in the DOM!
-
 ## Setting text on the `commentElement`
+
+Let's add some text to the `commentElement` before we place it in the DOM!
 
 Although our ultimate goal is to set the text currently written in the `<input>` element as the text in the `commentElement`, we'll start by just adding some generic text:
 
@@ -120,4 +120,10 @@ There are two things we can do to improve the user experience of this applicatio
 - If the input has no content, a new `<li>` should not be created in the comment list.
 - Remove the text from the `<input>` when the user submits a new comment after their comment has been added to the comment list.
 
-Try to tackle these on your own. You won't need to use any properties we haven't already discussed to accomplish these tasks. 
+Try to tackle these on your own. You won't need to use any properties we haven't already discussed to accomplish these tasks.
+
+## Knowledge Checks
+
+- True or false: manipulating the DOM in response to an event is just like manipulating the DOM normally
+- What is the key of the property on input elements for getting the value of whatever the user has entered?
+- Is it better to write code in small chunks, checking along the way, or to write it all at once and test to see if it works once you're done?
