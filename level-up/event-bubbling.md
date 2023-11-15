@@ -77,7 +77,7 @@ divElement.addEventListener('click', handleReaction)
 
 We replaced two event listeners with one! Notably, the `event` object's `target` property is set to the actual element clicked, so all of the code we already wrote is largely still valid!
 
-## 🧠 You Do
+## 🎓 You Do
 
 There has been a bug introduced into this code when we made this change. Track it down, and fix it.
 

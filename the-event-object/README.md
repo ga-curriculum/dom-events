@@ -6,7 +6,7 @@
 
 Let's begin with a quick refactor. So far, the `handleLike` function only handles likes (as its name accurately implies). In this lesson, we will rewrite it so that this single function handles both likes and dislikes. 
 
-### 🧠 You Do
+### 🎓 You Do
 
 Accomplish the following:
 

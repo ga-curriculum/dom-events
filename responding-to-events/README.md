@@ -91,7 +91,7 @@ commentButtonElement.addEventListener('click', () => {
 
 When you click the **Add comment** button, a new list item is created with `"Can you hear me?"` as the text content. But instead of this placeholder text, we want to display whatever text the user has typed into the `<input>` element.
 
-## 🧠 You Do
+## 🎓 You Do
 
 Select the `<input>` element out of the DOM. Assign it to a variable called `inputElement`.
 
@@ -113,7 +113,7 @@ commentButtonElement.addEventListener('click', () => {
 
 Write some text in the input and click the button. Success!
 
-## 🧠 You Do
+## 🎓 You Do
 
 There are two things we can do to improve the user experience of this application:
 
