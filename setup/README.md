@@ -6,14 +6,14 @@ Open your Terminal application and navigate to your `~/code/ga/lectures` directo
 cd ~/code/ga/lectures
 ```
 
-Create a new folder named `dom-events` and enter it:
+Create a new directory named `dom-events` and enter it:
 
 ```bash
 mkdir dom-events
 cd dom-events
 ```
 
-Inside the `dom-events` folder, make two more folders: `js` for JavaScript files and `css` for CSS files:
+Inside the `dom-events` directory, make two more directories: `js` for JavaScript files and `css` for CSS files:
 
 ```bash
 mkdir js css
@@ -21,15 +21,15 @@ mkdir js css
 
 Now, let's create the necessary files.
 
- - In the dom-events folder, create an index.html file.
- - In the js folder, create an app.js file.
- - In the css folder, create a style.css file.
+ - In the `dom-events` directory, create an `index.html` file.
+ - In the `js` directory, create an `app.js` file.
+ - In the `css` directory, create a `style.css` file.
 
 ```bash
 touch index.html ./js/app.js ./css/style.css
 ```
 
-Now, open your project folder in VS Code:
+Now, open your project directory in VS Code:
 
 ```bash
 code .
@@ -62,7 +62,6 @@ div {
 button {
   margin: 8px;
 }
-
 ```
 
 Next, let's add the following starter code inside of the `<body>` of our `index.html` file:
