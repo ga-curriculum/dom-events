@@ -21,9 +21,9 @@ mkdir js css
 
 Now, let's create the necessary files.
 
- - In the `dom-events` directory, create an `index.html` file.
- - In the `js` directory, create an `app.js` file.
- - In the `css` directory, create a `style.css` file.
+- In the `dom-events` directory, create an `index.html` file.
+- In the `js` directory, create an `app.js` file.
+- In the `css` directory, create a `style.css` file.
 
 ```bash
 touch index.html ./js/app.js ./css/style.css
