@@ -13,8 +13,8 @@ This module introduces DOM events in JavaScript.
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Setup](./setup/README.md)                               | -- | -- | Setting up the development environment     |
-| [Concepts](./concepts/README.md)                         | -- | -- | Understanding DOM events and their role in web page interactivity                              |
+| [Setup](./setup/README.md)                               | -- | -- | Setting up the development environment                                                  |
+| [Concepts](./concepts/README.md)                         | -- | -- | Understanding DOM events and their role in web page interactivity                       |
 | [Fundamentals](./fundamentals/README.md)                 | -- | -- | Compose event listeners with appropriate syntax.                                        |
 | [Responding to Events](./responding-to-events/README.md) | -- | -- | Create in-memory elements and add them to the DOM.                                      |
 | [Named Callbacks](./named-callbacks/README.md)           | -- | -- | Use named callback functions to make event handlers.                                    |
