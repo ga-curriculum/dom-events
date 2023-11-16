@@ -44,9 +44,3 @@ Lots of events can be generated within the browser. For example, all of these ac
 - And more!
 
 Take a quick peek at the [MDN documentation for events](https://developer.mozilla.org/en-US/docs/Web/Events) to see the sheer number of events we can respond to.
-
-## ❓ Review Questions
-
-- What are three examples of DOM events?
-- True or false: when a DOM event occurs, it triggers any JavaScript code that was listening for that event?
-- Can we update the DOM in response to an event?
