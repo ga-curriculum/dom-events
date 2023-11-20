@@ -1,21 +1,33 @@
 # ![DOM Events - Level Up - Alternate Event Listener Techniques](./assets/hero-alternate-event-listener-techniques.png)
 
-There are two additional approaches for registering event listeners. The following examples demonstrate a `'click'` event: 
+Understanding different methods for registering event listeners is crucial. Each approach has its use cases and implications. Let's explore two additional methods beyond the commonly recommended `addEventListener()`.
 
-1. In the HTML (inline):
+The following examples demonstrate a `'click'` event: 
 
-   ```html
-   <button onclick="submit()">Add Comment</button>
-   ```
+## 1. In the HTML (inline):
 
-   Using the HTML approach (`onclick="submit()"`) is typically frowned upon because it requires that the function be in the global scope. In addition, this, like inline styling, somewhat breaks the separation of concerns design principle.
+```html
+<button onclick="submit()">Add Comment</button>
+```
 
-2. Assigning to DOM elements' properties: 
+This method involves directly embedding the event listener within the HTML tag. It's straightforward and easy to implement, especially for quick, small-scale projects or for beginners just starting to learn how to handle events.
 
-   ```javascript
-   btnElement.onclick = submit
-   ```
+However, using the HTML approach (`onclick="submit()"`) is typically frowned upon because it requires that the function be in the global scope. 
 
-   The DOM element approach (`element.onclick`) is slightly better than the HTML approach because it does not require a globally scoped function.
+Inline event handling also mixes JavaScript with HTML, which can make the code less maintainable and harder to debug. It's akin to inline CSS styling, which is generally discouraged for similar reasons.
 
-Ultimately, the `addEventListener()` approach is the best practice because it has the flexibility of adding multiple listener functions. Some frameworks will make use of these methods though, so it's good to be able to recognize their use.
+## 2. Assigning to DOM elements' properties
+
+Assigning a function directly to the DOM element's event property is another method.
+
+```js
+ btnElement.onclick = submit
+```
+
+This approach (`element.onclick`) is slightly better than the HTML approach because it does not require a globally scoped function. `submit` can be a function scoped more narrowly, reducing the risk of conflicts.
+
+It offers a better separation of HTML and JavaScript compared to inline methods, though it's still less modular than `addEventListener()`.
+
+## Summary
+
+In summary, while these methods have their use cases, `addEventListener()` remains the recommended practice, particularly for complex or larger-scale applications. It offers greater flexibility, better maintainability, and adheres to modern web development best practices. It's also important to recognize these alternate methods, as they are still used in various scenarios, including some older frameworks and legacy codebases.
