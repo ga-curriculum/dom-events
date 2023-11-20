@@ -80,17 +80,3 @@ const handleLike = () => {
 ```
 
 Very nice!
-
-## ❓ Review Questions
-
-- Which of the following is correct syntax for passing a named callback to `addEventListener`:
-	- `likeButtonElement.addEventListener('click', handleLike());`
-	- `likeButtonElement.addEventListener('click', handleLike);`
-- True or false: when you assign a function to a variable, it becomes a named function
-- True or false: the following code passes `addEventListener` an anonymous function:
-
-  ```javascript
-  likeButtonElement.addEventListener('click', () => {
-    console.log('You clicked me!');
-  });
-  ```

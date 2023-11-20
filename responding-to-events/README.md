@@ -137,9 +137,3 @@ There are two things we can do to improve the user experience of this applicatio
 - Remove the text from the `<input>` when the user submits a new comment after their comment has been added to the comment list.
 
 Try to tackle these on your own. You won't need to use any properties we haven't already discussed to accomplish these tasks.
-
-## Knowledge Checks
-
-- True or false: manipulating the DOM in response to an event is just like manipulating the DOM normally
-- What is the key of the property on input elements for getting the value of whatever the user has entered?
-- Is it better to write code in small chunks, checking along the way, or to write it all at once and test to see if it works once you're done?

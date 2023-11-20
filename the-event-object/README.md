@@ -96,9 +96,3 @@ const handleReaction = (event) => {
 ```
 
 Now you can click on both buttons, and each only updates the data related to that button.
-
-## ❓ Review Questions
-
-- True or false: we must name the parameter in our callback function `event`. Other names like `evt`, `e`, or even `foo` will result in errors!
-- What property of `event` gives us the element on which the event occurred?
-- True or false: each event handler function can be assigned to one and only one element/event. You cannot pass two different invocations of `addEventListener` the same named event handler function.
