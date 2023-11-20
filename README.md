@@ -2,7 +2,7 @@
 
 ## About
 
-This module introduces DOM events in JavaScript.
+This module is designed for learners at an intermediate level, offering an in-depth exploration of how JavaScript interacts with the Document Object Model (DOM) to create dynamic and responsive web pages. In this module, you'll learn about different event types, how to handle them, and best practices for implementing event listeners. Events are the backbone of interactive web applications, allowing users to engage directly with webpage elements. Whether it's clicking a button, submitting a form, or hovering over an element, each action triggers specific events that JavaScript code can respond to. 
 
 ## Prerequisites
 
@@ -19,16 +19,16 @@ This module introduces DOM events in JavaScript.
 | [Responding to Events](./responding-to-events/README.md) | -- | -- | Create in-memory elements and add them to the DOM.                                      |
 | [Named Callbacks](./named-callbacks/README.md)           | -- | -- | Use named callback functions to make event handlers.                                    |
 | [The `event` Object](./the-event-object/README.md)       | -- | -- | Use the `event` object to allow multiple elements to share one named callback function. |
-| **Total content**                                        | -- | -- | --                                                                                      |
+| **Total content**                                        | -- | -- |                                                                                         |
 
 ## Level Up content
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Event Bubbling](./level-up/event-bubbling.md)                                           | -- | -- | -- |
-| [Removing Event Listeners](./level-up/removing-event-listeners.md)                       | -- | -- | -- |
-| [Alternate Event Listener Techniques](./level-up/alternate-event-listener-techniques.md) | -- | -- | -- |
-| **Total Level Up content**                                                               | -- | -- | -- |
+| [Event Bubbling](./level-up/event-bubbling.md)                                           | -- | -- | Event bubbling and event delegation |
+| [Removing Event Listeners](./level-up/removing-event-listeners.md)                       | -- | -- | Removing a set event listener |
+| [Alternate Event Listener Techniques](./level-up/alternate-event-listener-techniques.md) | -- | -- | `.onclick()` and inline listeners |
+| **Total Level Up content**                                                               | -- | -- |  |
 
 ## References 
 
