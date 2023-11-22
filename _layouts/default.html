@@ -24,14 +24,21 @@
   <script
     src="https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/js/highlightjs-copy.min.js"
   ></script>
+  <script
+    src="https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/js/custom.min.js"
+  ></script>
+  <script
+    src="https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/js/custom-defer.min.js"
+    defer
+  ></script>
+  <link 
+    rel="icon" 
+    type="image/png"
+    href="https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/assets/favicon.png"
+  >
   <title>DOM Events</title>
 </head>
 <body>
   <div class="container-lg px-3 my-5 markdown-body">{{ content }}</div>
-  <script>
-    anchors.add();
-    hljs.highlightAll();
-    hljs.addPlugin(new CopyButtonPlugin());
-  </script>
 </body>
 </html>
