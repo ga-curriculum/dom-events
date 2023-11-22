@@ -2,7 +2,9 @@
 
 ## About
 
-This module is designed for learners at an intermediate level, offering an in-depth exploration of how JavaScript interacts with the Document Object Model (DOM) to create dynamic and responsive web pages. In this module, you'll learn about different event types, how to handle them, and best practices for implementing event listeners. Events are the backbone of interactive web applications, allowing users to engage directly with webpage elements. Whether it's clicking a button, submitting a form, or hovering over an element, each action triggers specific events that JavaScript code can respond to. 
+This module is designed for learners at an intermediate level, offering an in-depth exploration of how JavaScript interacts with the Document Object Model (DOM) to create dynamic and responsive web pages. In this module, you'll learn about different event types, how to handle them, and best practices for implementing event listeners.
+
+Events are the backbone of interactive web applications, allowing users to engage directly with webpage elements. Whether it's clicking a button, submitting a form, or hovering over an element, each action triggers specific events that JavaScript code can respond to.
 
 ## Prerequisites
 
@@ -26,11 +28,11 @@ This module is designed for learners at an intermediate level, offering an in-de
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
 | [Event Bubbling](./level-up/event-bubbling.md)                                           | -- | -- | Event bubbling and event delegation |
-| [Removing Event Listeners](./level-up/removing-event-listeners.md)                       | -- | -- | Removing a set event listener |
-| [Alternate Event Listener Techniques](./level-up/alternate-event-listener-techniques.md) | -- | -- | `.onclick()` and inline listeners |
-| **Total Level Up content**                                                               | -- | -- |  |
+| [Removing Event Listeners](./level-up/removing-event-listeners.md)                       | -- | -- | Removing a set event listener       |
+| [Alternate Event Listener Techniques](./level-up/alternate-event-listener-techniques.md) | -- | -- | `.onclick()` and inline listeners   |
+| **Total Level Up content**                                                               | -- | -- |                                     |
 
-## References 
+## References
 
 📖 [Reference Materials](./references/README.md)
 
@@ -38,7 +40,7 @@ This module is designed for learners at an intermediate level, offering an in-de
 
 ✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
 
-🎥 [Video Hub](./internal-resources/video-hub/README.md)
+🎥 [Video Hub](./internal-resources/video-hub.md)
 
 🏗️ [Release Notes](./internal-resources/release-notes.md)
 

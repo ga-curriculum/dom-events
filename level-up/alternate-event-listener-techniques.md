@@ -2,9 +2,9 @@
 
 Understanding different methods for registering event listeners is crucial. Each approach has its use cases and implications. Let's explore two additional methods beyond the commonly recommended `addEventListener()`.
 
-The following examples demonstrate a `'click'` event: 
+The following examples demonstrate a `'click'` event:
 
-## 1. In the HTML (inline):
+## 1. In the HTML (inline)
 
 ```html
 <button onclick="submit()">Add Comment</button>
@@ -12,7 +12,7 @@ The following examples demonstrate a `'click'` event:
 
 This method involves directly embedding the event listener within the HTML tag. It's straightforward and easy to implement, especially for quick, small-scale projects or for beginners just starting to learn how to handle events.
 
-However, using the HTML approach (`onclick="submit()"`) is typically frowned upon because it requires that the function be in the global scope. 
+However, using the HTML approach (`onclick="submit()"`) is typically frowned upon because it requires that the function be in the global scope.
 
 Inline event handling also mixes JavaScript with HTML, which can make the code less maintainable and harder to debug. It's akin to inline CSS styling, which is generally discouraged for similar reasons.
 

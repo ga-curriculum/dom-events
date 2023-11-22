@@ -43,7 +43,9 @@ In the `index.html` file, add HTML boilerplate by typing `!` and hitting the `Ta
 
 Next, link your `style.css` file:
 
+```html
 <link rel="stylesheet" href="./css/style.css">
+```
 
 Inside the `style.css` file, add the following CSS starter code:
 

@@ -1,6 +1,6 @@
 # ![DOM Events - Named Callbacks](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to construct an event listener that calls a named function. 
+**Learning objective:** By the end of this lesson, students will be able to construct an event listener that calls a named function.
 
 ## Named callbacks
 
@@ -29,7 +29,8 @@ const handleLike = () => {
   console.log('You clicked me!');
 }
 ```
-Why did we name it ***handleLike***?
+
+> ❓ Why did we name this function ***handleLike***?
 
 The naming convention for functions in JavaScript, especially those used as event handlers, is important. Functions provided as callbacks to `addEventListener` are essentially "event handlers". Naming them appropriately helps clarify their purpose. For instance, ***handleLike*** clearly indicates that this function is designed to handle the "like" action.
 
@@ -41,7 +42,7 @@ Now, we can rewrite our event listener to use this function:
 likeButtonElement.addEventListener('click', handleLike);
 ```
 
-Notice how we do not *invoke* `()` this function when we've provided it as a callback! Doing so would immediately call the function on page load rather than waiting for the event to trigger it. 
+Notice how we do not *invoke* `()` this function when we've provided it as a callback! Doing so would immediately call the function on page load rather than waiting for the event to trigger it.
 
 Try the following ***incorrect*** code:
 

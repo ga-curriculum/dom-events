@@ -6,13 +6,13 @@ This release modularizes the legacy DOM Events lecture and provides some other m
 
 ### Release details
 
-**Additions**
+#### Additions
 
 - Add a microlesson for named callbacks.
 - Add more interaction with the event element in **The `event` Object** microlesson.
 - Add details on named callbacks in the **Named Callbacks** microlesson.
 
-**Changes**
+#### Changes
 
 - Expand on written lecture material to provide a more straightforward outline for instructors to deliver content with and to provide more thorough written documentation for students.
 - Update content to be style guide compliant.
@@ -24,6 +24,6 @@ This release modularizes the legacy DOM Events lecture and provides some other m
 - Move event bubbling content to Level Up.
 - Move removing event listener content to Level Up.
 
-**Removals**
+#### Removals
 
 - Remove the use of the `alert()` method in examples.

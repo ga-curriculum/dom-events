@@ -8,7 +8,7 @@ When an event occurs on an element, that event, whether it is listened to on tha
 2. `<div>` Event bubbles up to the parent element.
 3. `<body>` Event continues bubbling up to outer elements.
 
-All event listeners registered for the same event, such as `click`, will be invoked along the path to the `document` element - unless one of those listeners calls the event object's `stopPropagation` method. 
+All event listeners registered for the same event, such as `click`, will be invoked along the path to the `document` element - unless one of those listeners calls the event object's `stopPropagation` method.
 
 We'll observe event bubbling from the perspective of the like and dislike buttons that we created earlier:
 
@@ -25,7 +25,7 @@ We'll observe event bubbling from the perspective of the like and dislike button
 
 To help us observe event bubbling, we'll select the body and the div from the DOM and cache them in `bodyElement` and `divElement`, respectively.
 
-Next, in `js/app.js`, attach a 'click' listener to each element: 
+Next, in `js/app.js`, attach a 'click' listener to each element:
 
 ```javascript
 const bodyElement = document.querySelector('body')
@@ -49,7 +49,8 @@ const handleReaction = (event) => {
     likeButtonElement.textContent = `${likesCount} like(s). Like this post!`;
   } else {
     dislikesCount = dislikesCount + 1;
-    dislikeButtonElement.textContent = `${dislikesCount} dislike(s). Dislike this post!`;
+    dislikeButtonElement.textContent = 
+      `${dislikesCount} dislike(s). Dislike this post!`;
   }
 };
 ```

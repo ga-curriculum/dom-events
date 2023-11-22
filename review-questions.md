@@ -7,14 +7,14 @@ This section provides questions that can be used in various teaching formats. Th
 ❓ Review Questions
 
 - Which of the following is not a part of the syntax for creating an event listener?
-	- The element on which the event occurred
-	- The kind of event that took place?
-	- The callback function that is executed in response to the event
-	- The time at which the event occurred
+  - The element on which the event occurred
+  - The kind of event that took place?
+  - The callback function that is executed in response to the event
+  - The time at which the event occurred
 - How many arguments does `addEventListener` accept?
 - Where have we seen callback functions before?
 
-## Responding to Events 
+## Responding to Events
 
 ❓ Review Questions
 
@@ -22,13 +22,13 @@ This section provides questions that can be used in various teaching formats. Th
 - What is the key of the property on input elements for getting the value of whatever the user has entered?
 - Is it better to write code in small chunks, checking along the way, or to write it all at once and test to see if it works once you're done?
 
-## Named Callbacks 
+## Named Callbacks
 
 ❓ Review Questions
 
 - Which of the following is correct syntax for passing a named callback to `addEventListener`:
-	- `likeButtonElement.addEventListener('click', handleLike());`
-	- `likeButtonElement.addEventListener('click', handleLike);`
+  - `likeButtonElement.addEventListener('click', handleLike());`
+  - `likeButtonElement.addEventListener('click', handleLike);`
 - True or false: when you assign a function to a variable, it becomes a named function
 - True or false: the following code passes `addEventListener` an anonymous function:
 
@@ -38,7 +38,7 @@ likeButtonElement.addEventListener('click', () => {
 });
 ```
 
-## The event Object 
+## The event Object
 
 ❓ Review Questions
 

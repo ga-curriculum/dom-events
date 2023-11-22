@@ -1,17 +1,17 @@
 # ![DOM Events - The event Object](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will understand the utility of the `event` object and how it can help us reuse some functionality. 
+**Learning objective:** By the end of this lesson, students will understand the utility of the `event` object and how it can help us reuse some functionality.
 
 ## The dislike button
 
-Let's begin with a quick refactor. So far, the `handleLike` function only handles likes (as its name accurately implies). In this lesson, we will rewrite it so that this single function handles both likes and dislikes. 
+Let's begin with a quick refactor. So far, the `handleLike` function only handles likes (as its name accurately implies). In this lesson, we will rewrite it so that this single function handles both likes and dislikes.
 
 ### 🎓 You Do
 
 Start by doing the following:
 
 - Rename the `handleLike` function to `handleReaction`.
-- Change the `likeButtonElement`'s event handler to use this renamed function instead of the old `handleLike` function. 
+- Change the `likeButtonElement`'s event handler to use this renamed function instead of the old `handleLike` function.
 - Select the dislike button in the DOM. Assign it to a variable called `dislikeButtonElement`.
 - Add an event listener to the `dislikeButtonElement`. It should call the newly renamed `handleReaction` function when a `'click'` event occurs.
 
@@ -21,9 +21,9 @@ After you've completed the above tasks, by clicking either the like or dislike b
 
 ## Like/dislike functionality overview
 
-Now we're going to change up the `handleReaction` function so that it will work for both the like button and the dislike button. To do this, we must figure out which button the user clicked on. We don't currently have a mechanism to do this, but we do have access to one - the `event` object. 
+Now we're going to change up the `handleReaction` function so that it will work for both the like button and the dislike button. To do this, we must figure out which button the user clicked on. We don't currently have a mechanism to do this, but we do have access to one - the `event` object.
 
-The `event` object is an argument that is automatically passed by `addEventListener` to its callback function. JavaScript does this for us "under the hood", so while we don't immediately see it, it is available to us. The `event` object holds details about the event that just occurred. To gain access to it, simply include it as a parameter in your event handler function. 
+The `event` object is an argument that is automatically passed by `addEventListener` to its callback function. JavaScript does this for us "under the hood", so while we don't immediately see it, it is available to us. The `event` object holds details about the event that just occurred. To gain access to it, simply include it as a parameter in your event handler function.
 
 Let's take a look:
 
@@ -36,10 +36,9 @@ const handleReaction = (event) => {
 }
 ```
 
-We have the flexibility to name the event parameter whatever we want, however, choosing `'event'` is descriptive and clear. Some developers might use shorter forms like `'evt'` or `'e'`, but regardless of the name, the parameter functions the same way. When examining the event object, you'll notice it has numerous properties. Locate the `target` property, we'll use this to get more information about what was clicked. 
+We have the flexibility to name the event parameter whatever we want, however, choosing `'event'` is descriptive and clear. Some developers might use shorter forms like `'evt'` or `'e'`, but regardless of the name, the parameter functions the same way. When examining the event object, you'll notice it has numerous properties. Locate the `target` property, we'll use this to get more information about what was clicked.
 
-> In the event object, `event.target` represents the element in the DOM that triggered the event. That means it was the recipient of the user's action. 
-
+> In the event object, `event.target` represents the element in the DOM that triggered the event. That means it was the recipient of the user's action.
 
 We can confirm this. Change the console.dir in the `handleReaction` function to log `event.target`, and add another to log the `likeButtonElement`:
 
@@ -90,7 +89,8 @@ const handleReaction = (event) => {
     likeButtonElement.textContent = `${likesCount} like(s). Like this post!`;
   } else {
     dislikesCount = dislikesCount + 1;
-    dislikeButtonElement.textContent = `${dislikesCount} dislike(s). Dislike this post!`;
+    dislikeButtonElement.textContent = 
+      `${dislikesCount} dislike(s). Dislike this post!`;
   }
 };
 ```

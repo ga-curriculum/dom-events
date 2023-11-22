@@ -1,12 +1,12 @@
 # ![DOM Events - Responding to Events](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to respond to DOM events by interacting with the DOM. 
+**Learning objective:** By the end of this lesson, students will be able to respond to DOM events by interacting with the DOM.
 
 ## App overview
 
 We're going to build out the rest of this application so that users are able to add a comment to a list by typing their comment in an input and clicking a button to submit their comment.
 
-Add the following code below the existing `<div>` element inside of the `<body>`: 
+Add the following code below the existing `<div>` element inside of the `<body>`:
 
 ```html
   <h2>Comments</h2>
@@ -49,7 +49,7 @@ Return to the browser, then click on the button. If everything is connected corr
 
 ## Create an `<li>` element
 
-We will start small in the event listener, working our way up to the intended functionality. 
+We will start small in the event listener, working our way up to the intended functionality.
 
 Remove the `console.log()` we added to confirm the event listener works and replace it with a line to create a new `<li>` element. To do this, you'll use the `document` object's [`createElement()` method](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement):
 
@@ -59,7 +59,7 @@ commentButtonElement.addEventListener('click', () => {
 });
 ```
 
-We've named this variable `commentElement` because that's what it will be - a single `<li>` comment that is part of our larger comment list. It's important to remember that just because we created the element doesn't mean it's visible on the page yet - we haven't given it content or told it where to go! 
+We've named this variable `commentElement` because that's what it will be - a single `<li>` comment that is part of our larger comment list. It's important to remember that just because we created the element doesn't mean it's visible on the page yet - we haven't given it content or told it where to go!
 
 ## Setting text on the `commentElement`
 
@@ -75,22 +75,22 @@ commentButtonElement.addEventListener('click', () => {
 });
 ```
 
-When you click the **Add comment** button, a new list item is is logged to the console with `"Can you hear me?"` as the text content. 
+When you click the **Add comment** button, a new list item is is logged to the console with `"Can you hear me?"` as the text content.
 
-Now that it exists, let's place it in the DOM. 
+Now that it exists, let's place it in the DOM.
 
 ### Placing the `<li>` in the DOM
 
-Next we'll handle placing our new element in the DOM by selecting the `<ul>` element and adding the new `<li>` to it. 
+Next we'll handle placing our new element in the DOM by selecting the `<ul>` element and adding the new `<li>` to it.
 
 ```javascript
 const commentListElement = document.querySelector('ul');
 console.dir(commentListElement);
 ```
 
-Once you confirm that you have selected the correct element, you can remove the `console.dir()`. 
+Once you confirm that you have selected the correct element, you can remove the `console.dir()`.
 
-Now, you're ready to add the newly created element to the webpage. We'll do this by *appending* it to the `commentListElement`. 
+Now, you're ready to add the newly created element to the webpage. We'll do this by *appending* it to the `commentListElement`.
 
  Using `appendChild()`, the new element is added as the last child of the parent element. If the parent element has no children, the new element becomes the first child.
 
@@ -109,12 +109,11 @@ Now that we have a functional list, there is only one step left. Instead of the 
 ## 🎓 You Do
 
 1. Select the `<input>` element in the DOM. Assign it to a variable called `inputElement`.
-
 2. Don't forget to `console.dir()` the `inputElement` to be sure you're set up for success in future steps!
 
 ## Setting text on the `commentElement` to the value of `inputElement`
 
-It's time for the moment we've all been waiting for, collecting real data from our users! 
+It's time for the moment we've all been waiting for, collecting real data from our users!
 The `<input>` element has a special property called `value` that holds whatever the user has typed inside the `<input>` element. Take a moment to inspect the `console.dir()` of the `inputElement` to confirm this!
 
 We will use this property to set the `textContent` of the new `commentElement`:
@@ -129,7 +128,7 @@ commentButtonElement.addEventListener('click', () => {
 
 Write some text in the input and click the button. Success!
 
-## 🎓 You Do
+## 🎓 You Do some more!
 
 There are two things we can do to improve the user experience of this application:
 
