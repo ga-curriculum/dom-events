@@ -11,6 +11,10 @@
     rel="stylesheet"
     href="https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/css/code-theme.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/css/custom-style.min.css"
+  />
   <style>
     .markdown-body h1 {
       border-bottom: none;
@@ -48,7 +52,7 @@
       display: none !important;
     }
   </style>
-  <title>DOM Events</title>
+  {% render "https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/liquid/head.html" %}
 </head>
 <body>
   <div class="container-lg px-3 my-5 markdown-body">{{ content }}</div>
