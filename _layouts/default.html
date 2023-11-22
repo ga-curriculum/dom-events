@@ -52,7 +52,7 @@
       display: none !important;
     }
   </style>
-  {% render "https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/liquid/head.html" %}
+  {% includes "https://{{ site.github.pages_hostname }}/{{ site.github.owner_name }}/universal-resources-internal/static/liquid/head.html" %}
 </head>
 <body>
   <div class="container-lg px-3 my-5 markdown-body">{{ content }}</div>
