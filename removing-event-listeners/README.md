@@ -1,5 +1,7 @@
 # ![DOM Events - Removing Event Listeners](./assets/hero.png)
 
+**Learning objective:** By the end of this lesson, students will be able to implement the removal of event listeners in the Document Object Model (DOM). 
+
 It's possible to remove an added event listener; however, this only works if a named function was used as the callback:
 
 ```javascript
