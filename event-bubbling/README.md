@@ -1,5 +1,7 @@
 # ![DOM Events - Event Bubbling](./assets/hero.png)
 
+**Learning objective:** By the end of this lesson, students will understand the concept of event bubbling in the DOM and how to use event delegation to handle events on multiple elements.
+
 When an event occurs on an element, that event, whether it is listened to on that element or not, bubbles up through the DOM until it reaches the `document` object.
 
 ![A diagram of event bubbling. On the page there is a button element inside of a div element inside of the body element. When the event is clicked, the event travels up from the button, to the div, and to the body.](./assets/bubbling.png)
