@@ -1,5 +1,7 @@
 # ![DOM Events - Alternate Event Listener Techniques](./assets/hero.png)
 
+**Learning Objective:** By the end of this lesson, students will be able to apply different techniques for adding event listeners in the DOM, including inline event handling and assigning functions directly to DOM element properties. 
+
 Understanding different methods for registering event listeners is crucial. Each approach has its use cases and implications. Let's explore two additional methods beyond the commonly recommended `addEventListener()`.
 
 The following examples demonstrate a `'click'` event:
