@@ -1,4 +1,7 @@
-# ![DOM Events - Responding to Events](./assets/hero.png)
+<h1>
+  <span class="headline">DOM Events</span>
+  <span class="subhead">Responding to Events</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to respond to DOM events by interacting with the DOM.
 

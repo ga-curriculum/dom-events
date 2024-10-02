@@ -1,4 +1,7 @@
-# ![DOM Events - Alternate Event Listener Techniques](./assets/hero.png)
+<h1>
+  <span class="headline">DOM Events</span>
+  <span class="subhead">Alternate Event Listener Techniques</span>
+</h1>
 
 **Learning Objective:** By the end of this lesson, students will be able to apply different techniques for adding event listeners in the DOM, including inline event handling and assigning functions directly to DOM element properties. 
 

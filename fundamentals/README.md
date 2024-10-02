@@ -1,4 +1,7 @@
-# ![DOM Events - Fundamentals](./assets/hero.png)
+<h1>
+  <span class="headline">DOM Events</span>
+  <span class="subhead">Fundamentals</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to compose event listeners with appropriate syntax.
 
