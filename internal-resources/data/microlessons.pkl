@@ -38,7 +38,7 @@ namedCallbacks = new Template.Microlesson {
 }
 
 theEventObject = new Template.Microlesson {
-  friendlyName = "The <code>event</code> Object"
+  friendlyName = "The  event  Object"
   dirName = "the-event-object"
   type = "Content"
   videoUrl = ""
