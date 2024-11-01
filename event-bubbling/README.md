@@ -1,4 +1,7 @@
-# ![DOM Events - Event Bubbling](./assets/hero.png)
+<h1>
+  <span class="headline">DOM Events</span>
+  <span class="subhead">Event Bubbling</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will understand the concept of event bubbling in the DOM and how to use event delegation to handle events on multiple elements.
 

@@ -1,4 +1,7 @@
-# ![DOM Events - The event Object](./assets/hero.png)
+<h1>
+  <span class="headline">DOM Events</span>
+  <span class="subhead">The <code>event</code> Object</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will understand the utility of the `event` object and how it can help us reuse some functionality.
 

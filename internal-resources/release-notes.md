@@ -1,4 +1,7 @@
-# ![DOM Events - Release Notes](../assets/release-notes.png)
+<h1>
+  <span class="headline">DOM Events</span>
+  <span class="subhead">Release Notes</span>
+</h1>
 
 ## Version 1.0 - Updates from legacy content
 
