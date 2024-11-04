@@ -35,7 +35,7 @@ Events are the backbone of interactive web applications, allowing users to engag
 - Intro to HTML
 - Intro to the DOM
 
-### Github Pages Sites
+### Course landing pages
 
 - [Default Landing Page](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/dom-events/canvas-landing-pages/fallback)
 - [SEB - Software Engineering Bootcamp](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/dom-events/canvas-landing-pages/seb)
